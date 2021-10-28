@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+}
+h1 {
+  padding-bottom: 20px;
+}
+
+.grid {
+  border: 2px solid black;
+  display: grid;
+  background-color: white;
+  border-radius: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "dis dis dis dis"
+    "ac c divide times"
+    "seven eigth nine minus"
+    "four five six plus"
+    "one two three equals"
+    "zero zero dot equals";
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  margin:1px;
+  border-radius: 3px;
+  background-color: rgb(88, 80, 80);
+  border: 1px solid rgb(43, 38, 38);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:active {
+  color: rgb(43, 38, 38);
+  background-color: white;
+}
+.signs {
+  background-color: rgb(136, 130, 130);
+}
+.dis {
+  grid-area: dis;
+  background-color: rgb(48, 37, 37);
+  color: white;
+  font-size: 20px;
+  padding:10px;
+}
+
+.dis input {
+  width: 100%;
+  color: white;
+  padding: 5px 20px;
+  text-align: right;
+  background-color: black;
+}
+
+input::placeholder {
+  color:white;
+}
+
+.total {
+  padding: 5px 20px;
+  text-align: right;
+}
+
+.btn-zero {
+  grid-area: zero;
+}
+.btn-equals {
+  grid-area: equals;
+  background-color: rgb(57, 57, 185);
+}
+
+.btn-ac {
+  background-color: rgb(228, 85, 85);
+  grid-area: ac;
+}
+.btn-c {
+  background-color: rgb(228, 85, 85);
+  grid-area: c;
+}
+
+.btn-minus {
+  grid-area: minus;
+}
+.btn-plus {
+  grid-area: plus;
+}
+
+.person {
+  padding-top: 20px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.person a {
+  text-decoration: none;
+  color: black;
+}
