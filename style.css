@@ -23,8 +23,8 @@ html, body {
   flex-direction: column;
 }
 h1 {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
 
 .grid {
@@ -69,14 +69,14 @@ h1 {
   background-color: rgb(48, 37, 37);
   color: white;
   font-size: 20px;
-  padding:10px;
+  padding:7px;
   
 }
 
 .dis input {
   width: 100%;
   color: white;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-align: right;
   background-color: black;
 }
@@ -116,9 +116,9 @@ input::placeholder {
 }
 
 .person {
-  font-size: 15;
+  font-size: 15px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   opacity: 0.8;
   font-weight: lighter;
 }
