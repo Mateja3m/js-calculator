@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="container">
       <h1>JS Calculator</h1>
+        <h4 className="person">Coded by <a href="https://github.com/Mateja3m" target='_blank' rel='noopener noreferrer'>Milan Matejic</a></h4>
       <div className="grid">
         <div className="dis">
           <input type="text" value={expression} placeholder="0" disabled />
@@ -94,7 +95,6 @@ function App() {
           .
         </div>
       </div>
-        <h4 className="person">Coded by <a href="https://github.com/Mateja3m" target='_blank' rel='noopener noreferrer'>Milan Matejic</a></h4>
     </div>
   );
 }
