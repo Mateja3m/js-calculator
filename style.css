@@ -23,6 +23,7 @@ html, body {
   flex-direction: column;
 }
 h1 {
+  margin-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -32,7 +33,7 @@ h1 {
   background-color: white;
   border-radius: 5px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "dis dis dis dis"
     "ac c divide times"
@@ -46,8 +47,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
-  margin:1px;
+  padding: 0px 20px;
+  margin: 1px;
   border-radius: 3px;
   background-color: rgb(88, 80, 80);
   border: 1px solid rgb(43, 38, 38);
@@ -69,12 +70,13 @@ h1 {
   color: white;
   font-size: 20px;
   padding:10px;
+  
 }
 
 .dis input {
   width: 100%;
   color: white;
-  padding: 5px 20px;
+  padding: 15px 20px;
   text-align: right;
   background-color: black;
 }
@@ -84,8 +86,9 @@ input::placeholder {
 }
 
 .total {
-  padding: 5px 20px;
+  padding: 20px 20px;
   text-align: right;
+  font-size: 30px;
 }
 
 .btn-zero {
@@ -113,12 +116,18 @@ input::placeholder {
 }
 
 .person {
-  padding-top: 20px;
-  opacity: 0.7;
+  font-size: 15;
+  text-align: center;
+  padding-bottom: 20px;
+  opacity: 0.8;
   font-weight: lighter;
 }
 
 .person a {
   text-decoration: none;
   color: black;
+}
+
+.person a:hover {
+  color: blue;
 }
